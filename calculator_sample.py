@@ -3,13 +3,13 @@ from tkinter import *
 
 #tk window
 window=Tk()
-window.geometry("257x279")
+window.geometry("430x340")
 window.title("calculator")
 window.configure(bg="#00004d")
 
 
 #screen
-screen= Entry(window,width=35,justify=RIGHT)
+screen= Entry(window,width=40,justify=RIGHT)
 screen.grid(row=0, column=0, columnspan=4,)
 screen.bind("<Key>", lambda e: "break")
 
@@ -53,7 +53,7 @@ div_button=Button(window, text="/",bd=4,height=2,width=7,fg="#ffffff",bg="#00668
 div_button.grid(row=3, column=3)
 
 #row 4
-zero_button=Button(window, text="0",bd=4,height=2,width=16,fg="#ffffff",bg="#006680", activebackground="#66e0ff")
+zero_button=Button(window, text="0",bd=4,height=2,width=18,fg="#ffffff",bg="#006680", activebackground="#66e0ff")
 zero_button.grid(row=4, column=0,columnspan=2)
 
 dot_button=Button(window, text=".",bd=4,height=2,width=7,fg="#ffffff",bg="#006680", activebackground="#66e0ff")
